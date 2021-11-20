@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="./browser_action.css">
+</head>
+
+<body>
+    <section id="top-section">
+        <div id="input-side">
+            <div class="container">
+                <div class="container__item">
+                    <form class="form">
+                        <input id="input-data" class="form__field" placeholder="Nhập mã môn học..." />
+                        <button id="btn-sub" type="submit" class="btn btn--primary btn--inside uppercase">Lọc</button>
+                    </form>
+                </div>
+            </div>
+            <ul id="list-teacher">
+            </ul>
+            <div class="loading-box">
+                
+            </div>
+        </div>
+        <div id="list-side"  >
+            <h2>Danh sách môn học</h2>
+            <div class="table-side" style="box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px, rgba(0, 0, 0, 0.5) 0px 0px 1px 0px; height: 200px; overflow-y: auto; margin: 0 35px;">
+                
+                
+            </div>
+            <div id="button-box">
+                <button type="button" id='btn-del' class="btn btn--danger ">Xóa tất cả</button>
+            </div>
+        </div>
+    </section>
+    <button id="btn-render" style="padding: 10px; transform: translateX(350px); margin: 10px">Tính toán</button>
+    <section id="middle-section">
+    </section>
+    <div id="btn-see-more"></div>
+    <section id="bottom-section"></section>
+    
+
+    <script src="./browser_action.js"></script>
+
+
+</body>
+
+</html>
